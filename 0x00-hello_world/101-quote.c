@@ -1,15 +1,14 @@
 #include <stdio.h>
-#include <unistd.h>
 
 /**
  * main - Entry point
- * Return:1
+ *
+ * Return: Always 0 (Succes)
  */
 
 int main(void)
 {
-	char ch[] = "and that piece of art is useful\" - Dora Korpar, 2015-10-19";
-
-	write(2, ch, sizeof(ch));
+	fprintf(stderr, "and that piece of art is useful");
+	fprintf(stderr, "\" - Dora Korpar, 2015-10-19\n");
 	return (1);
 }
