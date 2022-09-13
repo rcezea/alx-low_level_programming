@@ -17,22 +17,14 @@ void print_to_98(int n)
 	}
 	else if (n <= 98)
 	{
-		while (n < 99)
+		while (n < 98)
 		{
-			if (n < 10)
-			{
-				_putchar(n + '0');
-			}
-			else if (n >= 10)
-			{
-				_putchar((n / 10) + '0');
-				_putchar((n % 10) + '0');
-			}
-			_putchar(44);
-			_putchar(32);
+			printf("%d, ", n);
 			n++;
 		}
 	}
-	putchar(57);
-	putchar(56);
+	_putchar(57);
+	_putchar(56);
+	_putchar(10);
+	
 }
