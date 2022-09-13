@@ -23,8 +23,6 @@ void print_to_98(int n)
 			n++;
 		}
 	}
-	_putchar(57);
-	_putchar(56);
-	_putchar(10);
+	printf("%d\n", 98);
 	
 }
