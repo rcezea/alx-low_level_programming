@@ -4,19 +4,30 @@
  */
 void times_table(void)
 {
-	int i = 0, j = 0;
+	int i = 0, j;
 
 	while (i < 10)
 	{
+		j=0;
 		while (j < 10)
 		{
-			_putchar((i * j) + '0');
-			if (j == 9)
-				continue;
+			int n = i * j;
+			if (n >= 10)
+			{
+				_putchar((n/10) + '0');
+				_putchar((n%10) + '0');
+			}
+			else
+			{
+				_putchar((n) + '0');
+			}
+			if (i == 9 && j == 9)
+				break;
 			_putchar(44);
 			_putchar(32);
 			j++;
 		}
+		putchar(10);
 		i++;
 	}
 }
