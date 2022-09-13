@@ -1,3 +1,4 @@
+#include "main.h"
 #include<stdio.h>
 /**
  * main - Entry point
@@ -6,12 +7,15 @@
  */
 int main(void)
 {
-	for (int i = 0; i < 1024; i++)
+	int i = 0;
+
+	while (i < 1024)
 	{
 		if (i % 3 == 0 || i % 5 == 0)
 		{
 			printf("%d", i);
 		}
+		i++;
 	}
 	printf("\n");
 }
