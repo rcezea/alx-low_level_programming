@@ -8,7 +8,7 @@ int main(void)
 {
 	int i = 1;
 
-	while (i < 100)
+	while (i < 101)
 	{
 		if ((i % 3 == 0) && (i % 5 == 0))
 		{
@@ -20,6 +20,11 @@ int main(void)
 		}
 		else if (i % 5 == 0)
 		{
+			if (i == 100)
+			{
+				printf("%d\n", i);
+				break;
+			}
 			printf("Buzz ");
 		}
 		else
@@ -28,8 +33,6 @@ int main(void)
 		}
 		i++;
 	}
-	printf("%d", i);
-	_putchar(10);
 	return (0);
 
 }
