@@ -1,16 +1,18 @@
-#include "main.h"
-#include<stdio.h>
+#include <stdio.h>
 /**
- * main - Entry point
- * Return: Always 0 (Success)
+ * main - print fizzbuzz
+ *
+ * Return: void.
  */
+
 int main(void)
 {
+
 	int i = 1;
 
 	while (i <= 100)
 	{
-		if ((i % 3 == 0) && (i % 5 == 0))
+		if (i % 3 == 0 && i % 5 == 0)
 		{
 			printf("FizzBuzz");
 		}
@@ -20,17 +22,21 @@ int main(void)
 		}
 		else if (i % 5 == 0)
 		{
-			printf("Buzz ");
+			printf("Buzz");
 		}
 		else
 		{
-			printf("%d ", i);
+			printf("%i", i);
 		}
+
 		if (i != 100)
-			printf(" ");
+		{
+			putchar(' ');
+		}
+
 		i++;
 	}
-	printf("\n");
+	putchar('\n');
 	return (0);
 
 }
