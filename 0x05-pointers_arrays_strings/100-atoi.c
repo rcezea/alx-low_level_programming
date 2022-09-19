@@ -7,7 +7,8 @@
 
 int _atoi(char *s)
 {
-	int i, sign = 1, resp = 0, firstNum = 0;
+	int i, sign = 1, firstNum = 0;
+	unsigned int resp = 0;
 
 	while (!(s[firstNum] >= 48 && s[firstNum] <= 57))
 	{
