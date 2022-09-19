@@ -7,20 +7,23 @@
 
 int _atoi(char *s)
 {
-	int sign = 1, resp = 0, firstNum;
+	int sign = 1, resp = 0, firstNum = 0;
 
-	for (firstNum = 0; !(s[firstNum] >= 48 && s[firstNum] <= 57); firstNum++)
+	while (!(s[firstNum] >= 48 && s[firstNum] <= 57))
 	{
 		if (s[firstNum] == '-')
 		{
 			sign *= -1;
 		}
+		firstNum++;
 	}
+	int i = firstNum;
 
-	for (int i = firstNum; s[i] >= 48 && s[i] <= 57; i++)
+	while (s[i] >= 48 && s[i] <= 57)
 	{
 		resp *= 10;
 		resp += (s[i] - 48);
+		i++;
 	}
 
 	return (sign * resp);
