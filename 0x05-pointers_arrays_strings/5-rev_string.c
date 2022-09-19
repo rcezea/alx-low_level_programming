@@ -30,4 +30,5 @@ void rev_string(char *s)
 		i++;
 		n++;
 	}
+	s[i] = '\0';
 }
