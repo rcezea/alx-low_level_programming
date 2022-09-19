@@ -24,11 +24,10 @@ void rev_string(char *s)
 	}
 	n = 0;
 	i = 0;
-	while (i < len)
+	while (me[n])
 	{
 		s[i] = me[n];
 		i++;
 		n++;
 	}
-	s[i] = '\0';
 }
