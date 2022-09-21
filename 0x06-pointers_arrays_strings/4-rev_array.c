@@ -6,7 +6,7 @@
  */
 void reverse_array(int *a, int n)
 {
-	int tmp[20], i = 0, j = 0;
+	int tmp[200], i = 0, j = 0;
 
 	while (n)
 	{
