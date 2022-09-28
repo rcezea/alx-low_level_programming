@@ -5,7 +5,7 @@ int is_prime_number(int n);
  * is_prime_number- checks for prime number
  * @n: number passed
  * Return: returns 1 if the input integer is a prime number
- * 	   otherwise return 0
+ * otherwise return 0
  */
 int is_prime_number(int n)
 {
@@ -21,7 +21,7 @@ int is_prime_number(int n)
  * @factor: incrementing variable to check for factors of n
  * @n: number to check
  * Return: 0 if it is divisible by other numbers
- * 	   1 if only divisible by itself
+ * 1 if only divisible by itself
  */
 int check_factors(int factor, int n)
 {
