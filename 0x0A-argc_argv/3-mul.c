@@ -17,11 +17,11 @@ int main(int argc, char **argv)
 			product *= atoi(argv[i]);
 			i++;
 		}
-		printf("%d", product);
+		printf("%d\n", product);
 	}
 	else
 	{
-		printf("Error\n");
+		printf("Error");
 		return (1);
 	}
 	return (0);
