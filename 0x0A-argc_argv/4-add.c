@@ -3,29 +3,26 @@
 
 /**
  * main - Entry point
- * @argc: number of arguments
- * @argv: array
- * Return: 0
+ * @argc: counts number of argurments
+ * @argv: list the number of arguements
+ * Return: returns 0 if succesful
  */
 
-int main(int argc, char **argv)
+int main(int argc, char *argv[])
 {
-	int i = 1, j, sum = 0;
+	int i, j, sum = 0;
 
-	while (i < argc)
+	for (i = 1; i <= argc - 1; i++)
 	{
-		j = 0;
-		while (argv[i][j])
+		for (j = 0; argv[i][j]; j++)
 		{
 			if (!(*(*(argv + i) + j) >= '0' && *(*(argv + i) + j) <= '9'))
 			{
-				printf("Error\n");
+				puts("Error");
 				return (1);
 			}
-			sum += atoi(argv[i]);
-			j++;
 		}
-		i++;
+			sum += atoi(argv[i]);
 	}
 	printf("%d\n", sum);
 	return (0);

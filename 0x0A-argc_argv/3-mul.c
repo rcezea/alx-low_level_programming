@@ -8,21 +8,14 @@
  */
 int main(int argc, char **argv)
 {
-	int i = 1, product = 1;
+	int product;
 
-	if (argc == 3)
-	{
-		while (i < argc)
-		{
-			product *= atoi(argv[i]);
-			i++;
-		}
-		printf("%d", product);
-	}
-	else
+	if (argc != 3)
 	{
 		printf("Error\n");
 		return (1);
 	}
+	product = atoi(argv[1]) * atoi(argv[2]);
+	printf("%d\n", product);
 	return (0);
 }
