@@ -20,6 +20,8 @@ char *_strdup(char *str)
 		array = malloc(sizeof(char) * (j + 1));
 	else
 		return (NULL);
+	if (array == NULL)
+		return (NULL);
 	if (str == NULL)
 		return (NULL);
 	while (str[i] != '\0')
