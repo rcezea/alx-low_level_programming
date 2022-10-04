@@ -9,14 +9,20 @@
 char *str_concat(char *s1, char *s2)
 {
 	char *array;
-	int i = 0, j = 0;
+	int i = 0, j = 0, size = 0;
 
 	if (s1 == NULL)
 		s1 = "";
 	if (s2 == NULL)
 		s2 = "";
+	while (s1[i] || s2[i])
+	{
+		i++;
+		size++;
+	}
+	i = 0;
 	if (1)
-		array = malloc(sizeof(s1) + sizeof(s2) + 1);
+		array = malloc(sizeof(char) + (size + 1));
 	else
 		return (NULL);
 	while (s1[i] != '\0')
