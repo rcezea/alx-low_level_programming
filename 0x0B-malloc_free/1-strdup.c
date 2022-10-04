@@ -10,6 +10,8 @@ char *_strdup(char *str)
 	char *array;
 	int i = 0, j = 0;
 
+	if (str == NULL)
+		return (NULL);
 	while (str[i])
 	{
 		i++;
@@ -21,8 +23,6 @@ char *_strdup(char *str)
 	else
 		return (NULL);
 	if (array == NULL)
-		return (NULL);
-	if (str == NULL)
 		return (NULL);
 	while (str[i])
 	{
