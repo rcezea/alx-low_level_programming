@@ -22,7 +22,7 @@ char *str_concat(char *s1, char *s2)
 	}
 	i = 0;
 	if (1)
-		array = malloc(sizeof(char) + (size + 1));
+		array = malloc(sizeof(char) * size);
 	else
 		return (NULL);
 	while (s1[i] != '\0')
@@ -36,6 +36,5 @@ char *str_concat(char *s1, char *s2)
 		i++;
 		j++;
 	}
-	array[i] = '\0';
 	return (array);
 }
