@@ -1,7 +1,8 @@
 #include "main.h"
 #include <stdlib.h>
 /**
- * void *_calloc(unsigned int nmemb, unsigned int size) - allocates memory for an array
+ * void *_calloc(unsigned int nmemb, unsigned int size) -
+ * allocates memory for an array
  * @nmemb: number of member elements
  * @size: size of element (data type)
  * Return: nothing
