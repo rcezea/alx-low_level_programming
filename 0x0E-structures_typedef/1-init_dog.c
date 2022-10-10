@@ -3,7 +3,7 @@
 #include "dog.h"
 /**
  * init_dog - initializes a variable of type struct dog
- * @dog *d - struct passed
+ * @d: struct passed
  * @name: dog name
  * @age: dog age
  * @owner: dog owner
