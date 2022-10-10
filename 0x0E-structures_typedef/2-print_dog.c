@@ -2,8 +2,8 @@
 #include<stdlib.h>
 #include "dog.h"
 /**
- * init_dog - initializes a variable of type struct dog
- * @name: d
+ * print_dog - initializes a variable of type struct dog
+ * @d: dog struct
  */
 void print_dog(struct dog *d)
 {
