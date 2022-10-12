@@ -28,7 +28,7 @@ int main(int argc, char *argv[])
 		printf("Error\n");
 		exit(100);
 	}
-		printf("%d\n", get_op_func(op)(a, b));
+	printf("%d\n", get_op_func(op)(a, b));
 
 	return (0);
 }

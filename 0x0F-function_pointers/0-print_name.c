@@ -8,6 +8,8 @@ void print_name(char *name, void (*f)(char *))
 {
 	void (*tmp)(char *);
 
+	if (name == NULL || f == NULL)
+		return;
 	tmp = f;
 	tmp(name);
 }
