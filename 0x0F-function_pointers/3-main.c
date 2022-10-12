@@ -1,18 +1,18 @@
 #include "3-calc.h"
 /**
  * main - Entry point
- * @argc - number of arguments
- * @argv - array of arguments
+ * @argc: number of arguments
+ * @argv: array of arguments
  * Return: Always 0 (Success)
  */
 int main(int argc, char *argv[])
 {
-    int a,b;
-    char *op;
+	int a, b;
+	char *op;
 
-    a = atoi(argv[1]);
-    b = atoi(argv[3]);
-    op = argv[2];
+	a = atoi(argv[1]);
+	b = atoi(argv[3]);
+	op = argv[2];
 	if (argc != 4)
 	{
 		printf("Error\n");
