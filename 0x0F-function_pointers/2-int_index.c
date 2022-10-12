@@ -20,11 +20,9 @@ int int_index(int *array, int size, int (*cmp)(int))
 	while (i < size)
 	{
 		x = tmp(array[i]);
+		if (x != 0)
+			return (i);
 		i++;
 	}
-	if (x == 0)
-		return (-1);
-	else
-		return (i);
 	return (0);
 }
