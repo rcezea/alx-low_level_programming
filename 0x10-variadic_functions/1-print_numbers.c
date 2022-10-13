@@ -10,7 +10,6 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 	va_list ap;
 
 	va_start(ap, n);
-	
 	while (i < n)
 	{
 		printf("%d", va_arg(ap, int));
