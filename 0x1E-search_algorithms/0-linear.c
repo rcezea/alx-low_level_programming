@@ -6,6 +6,7 @@
  * @size: size of the array
  * @value: search key
  * Return: index of the key in the array
+ * Description: Prints a value every time it is compared in the array
  */
 int linear_search(int *array, size_t size, int value)
 {
