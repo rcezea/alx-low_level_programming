@@ -1,6 +1,6 @@
 #include "search_algos.h"
 /**
- * binary_search - searches for a value using  Binary search algorithm 
+ * binary_search - searches for a value using  Binary search algorithm
  * @array: array passed
  * @size: size of the array
  * @value: key to search
@@ -8,7 +8,7 @@
  */
 int binary_search(int *array, size_t size, int value)
 {
-    size_t i, before, after;
+size_t i, before, after;
 
 	if (array == NULL)
 		return (-1);
